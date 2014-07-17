@@ -75,7 +75,12 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"showStory" sender:nil];
+    if (indexPath.item == 1) {
+        [self performSegueWithIdentifier:@"showFriendInterview" sender:nil];
+    } else {
+        [self performSegueWithIdentifier:@"showStory" sender:nil];
+    }
+    
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath

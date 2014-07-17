@@ -12,11 +12,11 @@
 
 @interface HLYStoryContentView ()
 
-@property (nonatomic, strong) UIView      *contentView;
-@property (nonatomic, strong) UIImageView *actor;
-@property (nonatomic, strong) UIView      *bottomLayer;
-@property (nonatomic, strong) UIView      *middleLayer;
-@property (nonatomic, strong) UIView      *topLayer;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIView *descriptionView;
+
+@property (nonatomic, strong) UIImageView *progeress;
+@property (nonatomic, strong) UIImageView *cursor;
 
 // move
 @property (nonatomic, unsafe_unretained) CGFloat originalY;
@@ -36,56 +36,43 @@
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:self.contentView];
         
-        _bottomLayer = [[UIView alloc] initWithFrame:self.bounds];
-        self.bottomLayer.backgroundColor = [UIColor clearColor];
-        self.bottomLayer.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [self.contentView addSubview:self.bottomLayer];
+        self.progeress = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 20)];
+        self.progeress.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        [self.contentView addSubview:self.progeress];
         
-        _middleLayer = [[UIView alloc] initWithFrame:self.bounds];
-        self.middleLayer.backgroundColor = [UIColor clearColor];
-        self.middleLayer.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [self.contentView addSubview:self.bottomLayer];
-        
-        _actor = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        self.actor.center = self.contentView.center;
-        UIImage *image = [UIImage imageWithColor:[UIColor greenColor]];
-        self.actor.image = image;
-        [self.contentView addSubview:self.actor];
-        self.originalY = self.actor.y;
-        
-        _topLayer = [[UIView alloc] initWithFrame:self.bounds];
-        self.topLayer.backgroundColor = [UIColor clearColor];
-        self.topLayer.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [self.contentView addSubview:self.topLayer];
+        self.cursor = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+        self.cursor.image = [UIImage imageWithColor:[UIColor redColor]];
+        [self.progeress addSubview:self.cursor];
     }
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.progeress.y = self.contentView.height - self.progeress.height;
+}
+
 #pragma mark -
 #pragma mark - setters & getters
-- (void)setState:(HLYStoryViewState)state
+- (void)setState:(HLYStoryViewState)state animated:(BOOL)animated
 {
-    switch (state) {
-        case HLYStoryViewStateLeading:
-            self.actor.y = 0;
-            break;
-            
-        case HLYStoryViewStateRearing:
-            self.actor.y = self.contentView.height - self.actor.height;
-            break;
-            
-        default:
-            self.actor.center = self.contentView.center;
-            break;
-    }
-    _state = state;
+    [NSException raise:NSInternalInconsistencyException format:@"子类的 %s 方法必须重写", __FUNCTION__];
 }
 
 #pragma mark -
 #pragma mark - public
 - (void)didScrollWithOffset:(CGFloat)offset
 {
-    self.actor.y = self.originalY + offset;
+
+}
+
+- (void)handleScroll:(UIScrollView *)scrollView
+{
+    int offset = (int)scrollView.contentOffset.x % (int)scrollView.width;
+    int halfWidth = (int)(scrollView.width / 2);
+    self.cursor.x = halfWidth + (offset );
 }
 
 @end

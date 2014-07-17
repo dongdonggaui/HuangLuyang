@@ -10,6 +10,8 @@
 #import "HLYStoryView.h"
 #import "HLYStoryContentView.h"
 
+#import "UIView+Frame.h"
+
 @interface HLYStoryViewController ()
 
 @end
@@ -29,16 +31,42 @@
 {
     [super viewDidLoad];
     
-    HLYStoryContentView *view1 = [[HLYStoryContentView alloc] initWithFrame:self.view.bounds];
-    view1.backgroundColor = [UIColor yellowColor];
-    HLYStoryContentView *view2 = [[HLYStoryContentView alloc] initWithFrame:self.view.bounds];
-    view2.backgroundColor = [UIColor blueColor];
-    HLYStoryContentView *view3 = [[HLYStoryContentView alloc] initWithFrame:self.view.bounds];
-    view3.backgroundColor = [UIColor whiteColor];
-    HLYStoryContentView *view4 = [[HLYStoryContentView alloc] initWithFrame:self.view.bounds];
-    view4.backgroundColor = [UIColor orangeColor];
-    HLYStoryView *storyView = [[HLYStoryView alloc] initWithFrame:self.view.bounds contentViews:@[view1, view2, view3, view4]];
+    self.view.backgroundColor = [UIColor blackColor];
+    self.view.opaque = YES;
+    CGRect frame = CGRectMake(0, (self.view.height - 352) / 2, self.view.width, 352);
+    HLYStoryContentView *bornView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    bornView.backgroundColor = [UIColor clearColor];
+    [bornView setState:HLYStoryViewStateInitial animated:YES];
+    HLYStoryContentView *elementarySchoolView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    elementarySchoolView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *juniorMiddleSchoolView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    juniorMiddleSchoolView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *seniorMiddleSchoolView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    seniorMiddleSchoolView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *bachelorUniversityView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    bachelorUniversityView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *haierView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    haierView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *masterUniversityView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    masterUniversityView.backgroundColor = [UIColor clearColor];
+    HLYStoryContentView *wanmeiView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    wanmeiView.backgroundColor = [UIColor clearColor];
+    HLYStoryView *storyView = [[HLYStoryView alloc] initWithFrame:frame contentViews:@[bornView, elementarySchoolView, juniorMiddleSchoolView, seniorMiddleSchoolView, bachelorUniversityView, haierView, masterUniversityView, wanmeiView]];
     [self.view addSubview:storyView];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

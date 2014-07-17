@@ -28,6 +28,12 @@
 		098A5B11196F8D6300735950 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098A5B0F196F8D6300735950 /* InfoPlist.strings */; };
 		098A5B13196F8D6300735950 /* HuangLuyangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A5B12196F8D6300735950 /* HuangLuyangTests.m */; };
 		09927BFF1973A07C00FA7073 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 09927BFE1973A07C00FA7073 /* UIView+Frame.m */; };
+		099E31C91976623000F9B1CB /* HLYElementarySchoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E31C81976623000F9B1CB /* HLYElementarySchoolView.m */; };
+		099E31CC197664C400F9B1CB /* HLYBornView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E31CB197664C400F9B1CB /* HLYBornView.m */; };
+		099E321E1977BB6600F9B1CB /* HLYFriendInterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E321D1977BB6600F9B1CB /* HLYFriendInterviewViewController.m */; };
+		099E32211977C57F00F9B1CB /* NSDate+Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E32201977C57F00F9B1CB /* NSDate+Display.m */; };
+		099E32251977E4D100F9B1CB /* popeye.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 099E32241977E4D100F9B1CB /* popeye.mp4 */; };
+		099E32281978043400F9B1CB /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E32271978043400F9B1CB /* NSString+Encrypt.m */; };
 		C9344D3857BE41238397FD06 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB1966241D4F70B3EF4885 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,17 @@
 		098A5B12196F8D6300735950 /* HuangLuyangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuangLuyangTests.m; sourceTree = "<group>"; };
 		09927BFD1973A07C00FA7073 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		09927BFE1973A07C00FA7073 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		099E31C71976623000F9B1CB /* HLYElementarySchoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYElementarySchoolView.h; sourceTree = "<group>"; };
+		099E31C81976623000F9B1CB /* HLYElementarySchoolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYElementarySchoolView.m; sourceTree = "<group>"; };
+		099E31CA197664C400F9B1CB /* HLYBornView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYBornView.h; sourceTree = "<group>"; };
+		099E31CB197664C400F9B1CB /* HLYBornView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYBornView.m; sourceTree = "<group>"; };
+		099E321C1977BB6600F9B1CB /* HLYFriendInterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYFriendInterviewViewController.h; sourceTree = "<group>"; };
+		099E321D1977BB6600F9B1CB /* HLYFriendInterviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYFriendInterviewViewController.m; sourceTree = "<group>"; };
+		099E321F1977C57F00F9B1CB /* NSDate+Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Display.h"; sourceTree = "<group>"; };
+		099E32201977C57F00F9B1CB /* NSDate+Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Display.m"; sourceTree = "<group>"; };
+		099E32241977E4D100F9B1CB /* popeye.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = popeye.mp4; sourceTree = "<group>"; };
+		099E32261978043400F9B1CB /* NSString+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encrypt.h"; sourceTree = "<group>"; };
+		099E32271978043400F9B1CB /* NSString+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypt.m"; sourceTree = "<group>"; };
 		9D568A203DCB469F95983F8E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C9CB1966241D4F70B3EF4885 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,6 +175,7 @@
 				098A5AEA196F8D6300735950 /* InfoPlist.strings */,
 				098A5AED196F8D6300735950 /* main.m */,
 				098A5AEF196F8D6300735950 /* HuangLuyang-Prefix.pch */,
+				099E32241977E4D100F9B1CB /* popeye.mp4 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,6 +207,10 @@
 				094E7AC9196FD8A9005CFAB9 /* HLYStoryView.m */,
 				094E7ACB196FD92D005CFAB9 /* HLYStoryContentView.h */,
 				094E7ACC196FD92D005CFAB9 /* HLYStoryContentView.m */,
+				099E31CA197664C400F9B1CB /* HLYBornView.h */,
+				099E31CB197664C400F9B1CB /* HLYBornView.m */,
+				099E31C71976623000F9B1CB /* HLYElementarySchoolView.h */,
+				099E31C81976623000F9B1CB /* HLYElementarySchoolView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -204,6 +226,8 @@
 				094E7ABE196FC2F9005CFAB9 /* HLYMainViewLayout.m */,
 				094E7AC1196FCBB0005CFAB9 /* HLYStoryViewController.h */,
 				094E7AC2196FCBB0005CFAB9 /* HLYStoryViewController.m */,
+				099E321C1977BB6600F9B1CB /* HLYFriendInterviewViewController.h */,
+				099E321D1977BB6600F9B1CB /* HLYFriendInterviewViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -213,6 +237,10 @@
 			children = (
 				09927BFD1973A07C00FA7073 /* UIView+Frame.h */,
 				09927BFE1973A07C00FA7073 /* UIView+Frame.m */,
+				099E321F1977C57F00F9B1CB /* NSDate+Display.h */,
+				099E32201977C57F00F9B1CB /* NSDate+Display.m */,
+				099E32261978043400F9B1CB /* NSString+Encrypt.h */,
+				099E32271978043400F9B1CB /* NSString+Encrypt.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -297,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				098A5AF8196F8D6300735950 /* Main_iPad.storyboard in Resources */,
+				099E32251977E4D100F9B1CB /* popeye.mp4 in Resources */,
 				098A5B00196F8D6300735950 /* Images.xcassets in Resources */,
 				098A5AF5196F8D6300735950 /* Main_iPhone.storyboard in Resources */,
 				098A5AEC196F8D6300735950 /* InfoPlist.strings in Resources */,
@@ -353,9 +382,14 @@
 			files = (
 				094E7A7E196FAFBC005CFAB9 /* HLYViewController.m in Sources */,
 				098A5AF2196F8D6300735950 /* HLYAppDelegate.m in Sources */,
+				099E31CC197664C400F9B1CB /* HLYBornView.m in Sources */,
+				099E31C91976623000F9B1CB /* HLYElementarySchoolView.m in Sources */,
 				094E7ACA196FD8A9005CFAB9 /* HLYStoryView.m in Sources */,
 				09927BFF1973A07C00FA7073 /* UIView+Frame.m in Sources */,
+				099E32281978043400F9B1CB /* NSString+Encrypt.m in Sources */,
+				099E321E1977BB6600F9B1CB /* HLYFriendInterviewViewController.m in Sources */,
 				098A5AEE196F8D6300735950 /* main.m in Sources */,
+				099E32211977C57F00F9B1CB /* NSDate+Display.m in Sources */,
 				094E7ACD196FD92D005CFAB9 /* HLYStoryContentView.m in Sources */,
 				094E7A81196FAFCE005CFAB9 /* HLYMainViewController.m in Sources */,
 				094E7AC3196FCBB0005CFAB9 /* HLYStoryViewController.m in Sources */,

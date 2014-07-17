@@ -9,20 +9,23 @@
 #import <UIKit/UIKit.h>
 
 typedef enum : NSUInteger {
-    HLYStoryViewStateLeading,
-    HLYStoryViewStateMiddle,
-    HLYStoryViewStateRearing,
+    HLYStoryViewStateInitial,
+    HLYStoryViewStateTerminal,
 } HLYStoryViewState;
 
 @interface HLYStoryContentView : UIView
 
-@property (nonatomic, strong, readonly) UIImageView *actor;
-@property (nonatomic, strong, readonly) UIView      *bottomLayer;
-@property (nonatomic, strong, readonly) UIView      *meddleLayer;
-@property (nonatomic, strong, readonly) UIView      *topLayer;
+@property (nonatomic, strong, readonly) UIView *contentView;
+@property (nonatomic, strong, readonly) UIView *descriptionView;
+
+@property (nonatomic, strong, readonly) UIImageView *progeress;
+@property (nonatomic, strong, readonly) UIImageView *cursor;
 
 @property (nonatomic, unsafe_unretained) HLYStoryViewState state;
 
 - (void)didScrollWithOffset:(CGFloat)offset;
+- (void)handleScroll:(UIScrollView *)scrollView;
+
+- (void)setState:(HLYStoryViewState)state animated:(BOOL)animated;
 
 @end
