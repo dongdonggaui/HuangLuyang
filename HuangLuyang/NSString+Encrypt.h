@@ -10,9 +10,8 @@
 
 @interface NSString (Encrypt)
 
-+ (NSString *)WM_generateAppkeyWithColumnId:(NSString *)columnId appId:(NSString *)appid;
-- (NSString *)WM_md5Lowercase;
-- (NSString *)WM_md5Uppercase;
-- (NSString *)WM_base64;
+- (NSString *)HLY_md5Lowercase;
+- (NSString *)HLY_md5Uppercase;
+- (NSString *)HLY_base64;
 
 @end

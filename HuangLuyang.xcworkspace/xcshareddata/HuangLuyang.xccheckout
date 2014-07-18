@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D60A6BE5-3817-455D-A46E-B755EF0F0A9B</string>
+	<string>50AE65D5-B307-4700-A298-410DB4457167</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HuangLuyang</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4649BBB9-69B9-428C-AE83-D0E3A4B6262C</key>
-		<string>ssh://github.com/dongdonggaui/WanmeiAD.git</string>
+		<key>D7FE0329-5498-4133-B37E-81B9FC4193B0</key>
+		<string>ssh://github.com/dongdonggaui/HuangLuyang.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HuangLuyang.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4649BBB9-69B9-428C-AE83-D0E3A4B6262C</key>
+		<key>D7FE0329-5498-4133-B37E-81B9FC4193B0</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/dongdonggaui/WanmeiAD.git</string>
+	<string>ssh://github.com/dongdonggaui/HuangLuyang.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4649BBB9-69B9-428C-AE83-D0E3A4B6262C</string>
+	<string>D7FE0329-5498-4133-B37E-81B9FC4193B0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4649BBB9-69B9-428C-AE83-D0E3A4B6262C</string>
+			<string>D7FE0329-5498-4133-B37E-81B9FC4193B0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HuangLuyang</string>
 		</dict>

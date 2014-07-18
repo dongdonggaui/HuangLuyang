@@ -112,12 +112,7 @@
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="iU0-uF-tMS"/>
                                                     </constraints>
                                                 </imageView>
-                                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONj-8r-pDV">
-                                                    <rect key="frame" x="10" y="10" width="300" height="191"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </webView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-MY-5lc">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-MY-5lc">
                                                     <rect key="frame" x="20" y="209" width="280" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -141,16 +136,12 @@
                                                 <constraint firstItem="83g-Rr-kAc" firstAttribute="bottom" secondItem="DFG-rF-bpi" secondAttribute="bottom" id="6FN-gx-Fau"/>
                                                 <constraint firstAttribute="trailing" secondItem="DFG-rF-bpi" secondAttribute="trailing" constant="10" id="CHO-TN-oDR"/>
                                                 <constraint firstAttribute="bottom" secondItem="x8M-MY-5lc" secondAttribute="bottom" id="NJy-EV-tVr"/>
-                                                <constraint firstItem="DFG-rF-bpi" firstAttribute="leading" secondItem="ONj-8r-pDV" secondAttribute="leading" id="PXz-dK-xtW"/>
                                                 <constraint firstItem="DFG-rF-bpi" firstAttribute="top" secondItem="Axy-aN-Aie" secondAttribute="top" constant="10" id="QQj-S0-jtF"/>
                                                 <constraint firstItem="DFG-rF-bpi" firstAttribute="leading" secondItem="Axy-aN-Aie" secondAttribute="leading" constant="10" id="TgE-Sc-vee"/>
-                                                <constraint firstItem="DFG-rF-bpi" firstAttribute="trailing" secondItem="ONj-8r-pDV" secondAttribute="trailing" id="aCf-7S-Q8p"/>
                                                 <constraint firstItem="x8M-MY-5lc" firstAttribute="leading" secondItem="Axy-aN-Aie" secondAttribute="leading" constant="20" id="bNL-Tl-hoS"/>
                                                 <constraint firstItem="83g-Rr-kAc" firstAttribute="trailing" secondItem="DFG-rF-bpi" secondAttribute="trailing" id="c6U-zR-fcO"/>
-                                                <constraint firstItem="DFG-rF-bpi" firstAttribute="bottom" secondItem="ONj-8r-pDV" secondAttribute="bottom" id="deh-tn-KfR"/>
                                                 <constraint firstItem="83g-Rr-kAc" firstAttribute="leading" secondItem="DFG-rF-bpi" secondAttribute="leading" id="diN-nK-OJC"/>
                                                 <constraint firstAttribute="trailing" secondItem="x8M-MY-5lc" secondAttribute="trailing" constant="20" id="nsL-z5-tBn"/>
-                                                <constraint firstItem="DFG-rF-bpi" firstAttribute="top" secondItem="ONj-8r-pDV" secondAttribute="top" id="tiC-cA-OMh"/>
                                                 <constraint firstItem="x8M-MY-5lc" firstAttribute="top" secondItem="DFG-rF-bpi" secondAttribute="bottom" constant="8" id="yqa-hd-Icu"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -158,7 +149,6 @@
                                             <outlet property="timeLabel" destination="83g-Rr-kAc" id="kex-0Z-F6b"/>
                                             <outlet property="videoDescriptionLabel" destination="x8M-MY-5lc" id="g0l-Qh-E4J"/>
                                             <outlet property="videoShotImageView" destination="DFG-rF-bpi" id="wQB-yD-hV5"/>
-                                            <outlet property="videoWebView" destination="ONj-8r-pDV" id="Gvh-av-Ydc"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="videoRearCell" rowHeight="240" id="ZHc-QB-isC" customClass="HLYFriendVideoRearCell">
@@ -185,7 +175,7 @@
                                                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <size key="shadowOffset" width="-1" height="-1"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPQ-NJ-VxZ">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="iPQ-NJ-VxZ">
                                                     <rect key="frame" x="20" y="198" width="280" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <constraints>
@@ -233,11 +223,41 @@
                     <navigationItem key="navigationItem" id="mr3-34-rby"/>
                     <connections>
                         <outlet property="tableView" destination="MWF-SY-FbO" id="462-Al-Mju"/>
+                        <segue destination="RGp-X1-fH6" kind="push" identifier="showPlayer" id="rh8-yD-MQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xu8-EX-BkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="361"/>
+            <point key="canvasLocation" x="852" y="361"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="fs8-kR-wCh">
+            <objects>
+                <viewController id="RGp-X1-fH6" customClass="HLYVideoPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I9J-sf-DRf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bjz-fg-M9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mE1-Za-uTf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZh-op-wVb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lL7-XW-IqZ"/>
+                    <connections>
+                        <outlet property="webView" destination="BZh-op-wVb" id="czg-TW-JlB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvt-Jm-nZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="360"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="BdX-lv-8RM">

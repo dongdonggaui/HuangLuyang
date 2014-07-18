@@ -10,4 +10,6 @@
 
 @interface HLYViewController : UIViewController
 
+@property (nonatomic) id passValue;
+
 @end

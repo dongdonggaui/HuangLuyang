@@ -13,6 +13,9 @@
 		094E7AC3196FCBB0005CFAB9 /* HLYStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7AC2196FCBB0005CFAB9 /* HLYStoryViewController.m */; };
 		094E7ACA196FD8A9005CFAB9 /* HLYStoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7AC9196FD8A9005CFAB9 /* HLYStoryView.m */; };
 		094E7ACD196FD92D005CFAB9 /* HLYStoryContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7ACC196FD92D005CFAB9 /* HLYStoryContentView.m */; };
+		0980966A1978BA9D00631808 /* HLYVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 098096691978BA9D00631808 /* HLYVideoManager.m */; };
+		098096731978BF5600631808 /* HLYVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098096721978BF5600631808 /* HLYVideoPlayerViewController.m */; };
+		098096761978C3F200631808 /* HLYVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 098096751978C3F200631808 /* HLYVideo.m */; };
 		098A5AE2196F8D6300735950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098A5AE1196F8D6300735950 /* Foundation.framework */; };
 		098A5AE4196F8D6300735950 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098A5AE3196F8D6300735950 /* CoreGraphics.framework */; };
 		098A5AE6196F8D6300735950 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098A5AE5196F8D6300735950 /* UIKit.framework */; };
@@ -61,6 +64,12 @@
 		094E7AC9196FD8A9005CFAB9 /* HLYStoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYStoryView.m; sourceTree = "<group>"; };
 		094E7ACB196FD92D005CFAB9 /* HLYStoryContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYStoryContentView.h; sourceTree = "<group>"; };
 		094E7ACC196FD92D005CFAB9 /* HLYStoryContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYStoryContentView.m; sourceTree = "<group>"; };
+		098096681978BA9D00631808 /* HLYVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYVideoManager.h; sourceTree = "<group>"; };
+		098096691978BA9D00631808 /* HLYVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYVideoManager.m; sourceTree = "<group>"; };
+		098096711978BF5600631808 /* HLYVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYVideoPlayerViewController.h; sourceTree = "<group>"; };
+		098096721978BF5600631808 /* HLYVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYVideoPlayerViewController.m; sourceTree = "<group>"; };
+		098096741978C3F200631808 /* HLYVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYVideo.h; sourceTree = "<group>"; };
+		098096751978C3F200631808 /* HLYVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYVideo.m; sourceTree = "<group>"; };
 		098A5ADE196F8D6300735950 /* HuangLuyang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuangLuyang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098A5AE1196F8D6300735950 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		098A5AE3196F8D6300735950 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098096671978BA7B00631808 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				098096681978BA9D00631808 /* HLYVideoManager.h */,
+				098096691978BA9D00631808 /* HLYVideoManager.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		098A5AD5196F8D6300735950 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +177,9 @@
 				098A5AF0196F8D6300735950 /* HLYAppDelegate.h */,
 				098A5AF1196F8D6300735950 /* HLYAppDelegate.m */,
 				094E7AC0196FC551005CFAB9 /* HLYAppHeader.h */,
+				098096741978C3F200631808 /* HLYVideo.h */,
+				098096751978C3F200631808 /* HLYVideo.m */,
+				098096671978BA7B00631808 /* Services */,
 				09927BFC1973A04800FA7073 /* Categories */,
 				098A5B1C196F8D7200735950 /* Views */,
 				098A5B1D196F8D7A00735950 /* ViewControllers */,
@@ -228,6 +249,8 @@
 				094E7AC2196FCBB0005CFAB9 /* HLYStoryViewController.m */,
 				099E321C1977BB6600F9B1CB /* HLYFriendInterviewViewController.h */,
 				099E321D1977BB6600F9B1CB /* HLYFriendInterviewViewController.m */,
+				098096711978BF5600631808 /* HLYVideoPlayerViewController.h */,
+				098096721978BF5600631808 /* HLYVideoPlayerViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -386,9 +409,12 @@
 				099E31C91976623000F9B1CB /* HLYElementarySchoolView.m in Sources */,
 				094E7ACA196FD8A9005CFAB9 /* HLYStoryView.m in Sources */,
 				09927BFF1973A07C00FA7073 /* UIView+Frame.m in Sources */,
+				098096761978C3F200631808 /* HLYVideo.m in Sources */,
 				099E32281978043400F9B1CB /* NSString+Encrypt.m in Sources */,
 				099E321E1977BB6600F9B1CB /* HLYFriendInterviewViewController.m in Sources */,
 				098A5AEE196F8D6300735950 /* main.m in Sources */,
+				098096731978BF5600631808 /* HLYVideoPlayerViewController.m in Sources */,
+				0980966A1978BA9D00631808 /* HLYVideoManager.m in Sources */,
 				099E32211977C57F00F9B1CB /* NSDate+Display.m in Sources */,
 				094E7ACD196FD92D005CFAB9 /* HLYStoryContentView.m in Sources */,
 				094E7A81196FAFCE005CFAB9 /* HLYMainViewController.m in Sources */,
