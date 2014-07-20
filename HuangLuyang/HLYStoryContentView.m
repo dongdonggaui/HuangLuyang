@@ -56,6 +56,11 @@
 
 #pragma mark -
 #pragma mark - setters & getters
+- (void)setState:(HLYStoryViewState)state
+{
+    [self setState:state animated:NO];
+}
+
 - (void)setState:(HLYStoryViewState)state animated:(BOOL)animated
 {
     [NSException raise:NSInternalInconsistencyException format:@"子类的 %s 方法必须重写", __FUNCTION__];

@@ -8,7 +8,7 @@
 
 #import "HLYStoryViewController.h"
 #import "HLYStoryView.h"
-#import "HLYStoryContentView.h"
+#import "HLYBornView.h"
 
 #import "UIView+Frame.h"
 
@@ -34,9 +34,8 @@
     self.view.backgroundColor = [UIColor blackColor];
     self.view.opaque = YES;
     CGRect frame = CGRectMake(0, (self.view.height - 352) / 2, self.view.width, 352);
-    HLYStoryContentView *bornView = [[HLYStoryContentView alloc] initWithFrame:frame];
+    HLYBornView *bornView = [[HLYBornView alloc] initWithFrame:frame];
     bornView.backgroundColor = [UIColor clearColor];
-    [bornView setState:HLYStoryViewStateInitial animated:YES];
     HLYStoryContentView *elementarySchoolView = [[HLYStoryContentView alloc] initWithFrame:frame];
     elementarySchoolView.backgroundColor = [UIColor clearColor];
     HLYStoryContentView *juniorMiddleSchoolView = [[HLYStoryContentView alloc] initWithFrame:frame];
@@ -53,6 +52,16 @@
     wanmeiView.backgroundColor = [UIColor clearColor];
     HLYStoryView *storyView = [[HLYStoryView alloc] initWithFrame:frame contentViews:@[bornView, elementarySchoolView, juniorMiddleSchoolView, seniorMiddleSchoolView, bachelorUniversityView, haierView, masterUniversityView, wanmeiView]];
     [self.view addSubview:storyView];
+    
+    // back button
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.width = 50;
+    backButton.height = 50;
+    backButton.x = 20;
+    backButton.y = 20;
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -75,6 +84,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark -
+#pragma mark - private
+- (void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

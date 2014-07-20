@@ -77,6 +77,8 @@
 {
     if (indexPath.item == 1) {
         [self performSegueWithIdentifier:@"showFriendInterview" sender:nil];
+    } else if (indexPath.item == 0) {
+        [self performSegueWithIdentifier:@"showResume" sender:nil];
     } else {
         [self performSegueWithIdentifier:@"showStory" sender:nil];
     }
