@@ -30,7 +30,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
-  NSLogger: c4df4b0208d724f244c05f1966b7402f14d7bf55
+  NSLogger: 3df5dca5dcbf99fe1e5c54931e44880f6e7eb089
   pop: e518794da38942c05255eb64b36d894e70cb4f00
   UIImage+ImageWithColor: a9c327e5cb5ea9ead9c6dbb3ba19e7725c3078ef
 

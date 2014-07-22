@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @property (nonatomic, strong) HLYAutoLayoutTableManager *tableManager;
 @property (nonatomic, strong) NSMutableArray *companies;
@@ -40,12 +41,16 @@
 {
     [super awakeFromNib];
     
-    self.title = NSLocalizedString(@"简历", @"");
+    self.title = NSLocalizedString(@"resume", @"");
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.segmentedControl setTitle:NSLocalizedString(@"seg_resume_ch", nil) forSegmentAtIndex:0];
+    [self.segmentedControl setTitle:NSLocalizedString(@"seg_resume_en", nil) forSegmentAtIndex:1];
+    self.segmentedControl.selectedSegmentIndex = 0;
     
     //FIXME: test
     HLYResumeCompany *company1 = [[HLYResumeCompany alloc] init];

@@ -75,14 +75,30 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.item == 1) {
-        [self performSegueWithIdentifier:@"showFriendInterview" sender:nil];
-    } else if (indexPath.item == 0) {
-        [self performSegueWithIdentifier:@"showResume" sender:nil];
-    } else {
-        [self performSegueWithIdentifier:@"showStory" sender:nil];
+    NSString *segue = nil;
+    switch (indexPath.item) {
+        case 1:
+            segue = @"showFriendInterview";
+            break;
+            
+        case 2:
+            segue = @"showStory";
+            break;
+            
+        case 8:
+            segue = @"showContactMe";
+            break;
+            
+        case 9:
+            segue = @"showMore";
+            break;
+            
+        default:
+            segue = @"showResume";
+            break;
     }
     
+    [self performSegueWithIdentifier:segue sender:nil];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath

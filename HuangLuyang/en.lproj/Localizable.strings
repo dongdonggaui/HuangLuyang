@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  HuangLuyang
+
+  Created by huangluyang on 14-7-22.
+  Copyright (c) 2014年 huangluyang. All rights reserved.
+*/
+"contact_me" = "Contact Me";
+"resume" = "Resume";
+"back" = "Back";
+"seg_resume_ch" = "Chinese";
+"seg_resume_en" = "English";
+"main_more" = "More";
+"more_setting" = "Setting";
+"more_help" = "Tips";
+"more_rate" = "Rate Me";
+"more_share" = "Share with friends";
+"more_about" = "About";
+"btn_cancel" = "Cancel";
+"act_mail" = "Mail";
+"act_wechat" = "WeChat";
+"current_version" = "Current Version";

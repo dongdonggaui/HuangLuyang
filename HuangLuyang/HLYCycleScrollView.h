@@ -1,5 +1,5 @@
 //
-//  CycleScrollView.h
+//  HLYCycleScrollView.h
 //  PagedScrollView
 //
 //  Created by huangluyang on 14-1-23.

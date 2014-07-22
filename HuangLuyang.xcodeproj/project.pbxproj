@@ -25,6 +25,8 @@
 		065E05DC197B4E7600F77D82 /* HLYMasterUniversityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065E05DB197B4E7600F77D82 /* HLYMasterUniversityView.m */; };
 		065E05DF197B4E9900F77D82 /* HLYWanmeiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065E05DE197B4E9900F77D82 /* HLYWanmeiView.m */; };
 		065E05E3197B6C2600F77D82 /* HLYCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065E05E2197B6C2600F77D82 /* HLYCycleScrollView.m */; };
+		090717EF197E5F9E00306AAC /* HLYActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090717EE197E5F9E00306AAC /* HLYActivityView.m */; };
+		090717F3197E663800306AAC /* HLYAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090717F2197E663800306AAC /* HLYAboutViewController.m */; };
 		094E7A7E196FAFBC005CFAB9 /* HLYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7A7D196FAFBC005CFAB9 /* HLYViewController.m */; };
 		094E7A81196FAFCE005CFAB9 /* HLYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7A80196FAFCE005CFAB9 /* HLYMainViewController.m */; };
 		094E7ABF196FC2F9005CFAB9 /* HLYMainViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E7ABE196FC2F9005CFAB9 /* HLYMainViewLayout.m */; };
@@ -48,6 +50,9 @@
 		098A5B09196F8D6300735950 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098A5AE5196F8D6300735950 /* UIKit.framework */; };
 		098A5B11196F8D6300735950 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098A5B0F196F8D6300735950 /* InfoPlist.strings */; };
 		098A5B13196F8D6300735950 /* HuangLuyangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A5B12196F8D6300735950 /* HuangLuyangTests.m */; };
+		098E86A0197E387D008D3896 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098E86A2197E387D008D3896 /* Localizable.strings */; };
+		098E86A6197E3897008D3896 /* HLYContactMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098E86A5197E3897008D3896 /* HLYContactMeViewController.m */; };
+		098E86A9197E4B26008D3896 /* HLYMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098E86A8197E4B26008D3896 /* HLYMoreViewController.m */; };
 		09927BFF1973A07C00FA7073 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 09927BFE1973A07C00FA7073 /* UIView+Frame.m */; };
 		099E31C91976623000F9B1CB /* HLYElementarySchoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E31C81976623000F9B1CB /* HLYElementarySchoolView.m */; };
 		099E31CC197664C400F9B1CB /* HLYBornView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099E31CB197664C400F9B1CB /* HLYBornView.m */; };
@@ -104,6 +109,10 @@
 		065E05DE197B4E9900F77D82 /* HLYWanmeiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYWanmeiView.m; sourceTree = "<group>"; };
 		065E05E1197B6C2600F77D82 /* HLYCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYCycleScrollView.h; sourceTree = "<group>"; };
 		065E05E2197B6C2600F77D82 /* HLYCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYCycleScrollView.m; sourceTree = "<group>"; };
+		090717ED197E5F9E00306AAC /* HLYActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYActivityView.h; sourceTree = "<group>"; };
+		090717EE197E5F9E00306AAC /* HLYActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYActivityView.m; sourceTree = "<group>"; };
+		090717F1197E663800306AAC /* HLYAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYAboutViewController.h; sourceTree = "<group>"; };
+		090717F2197E663800306AAC /* HLYAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYAboutViewController.m; sourceTree = "<group>"; };
 		094E7A7C196FAFBC005CFAB9 /* HLYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYViewController.h; sourceTree = "<group>"; };
 		094E7A7D196FAFBC005CFAB9 /* HLYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYViewController.m; sourceTree = "<group>"; };
 		094E7A7F196FAFCE005CFAB9 /* HLYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYMainViewController.h; sourceTree = "<group>"; };
@@ -141,6 +150,13 @@
 		098A5B0E196F8D6300735950 /* HuangLuyangTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HuangLuyangTests-Info.plist"; sourceTree = "<group>"; };
 		098A5B10196F8D6300735950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		098A5B12196F8D6300735950 /* HuangLuyangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuangLuyangTests.m; sourceTree = "<group>"; };
+		098E869D197E385D008D3896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		098E86A1197E387D008D3896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		098E86A3197E3884008D3896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		098E86A4197E3897008D3896 /* HLYContactMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYContactMeViewController.h; sourceTree = "<group>"; };
+		098E86A5197E3897008D3896 /* HLYContactMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYContactMeViewController.m; sourceTree = "<group>"; };
+		098E86A7197E4B26008D3896 /* HLYMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYMoreViewController.h; sourceTree = "<group>"; };
+		098E86A8197E4B26008D3896 /* HLYMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLYMoreViewController.m; sourceTree = "<group>"; };
 		09927BFD1973A07C00FA7073 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		09927BFE1973A07C00FA7073 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		099E31C71976623000F9B1CB /* HLYElementarySchoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLYElementarySchoolView.h; sourceTree = "<group>"; };
@@ -229,6 +245,17 @@
 			name = StoryView;
 			sourceTree = "<group>";
 		};
+		090717F0197E662400306AAC /* More */ = {
+			isa = PBXGroup;
+			children = (
+				098E86A7197E4B26008D3896 /* HLYMoreViewController.h */,
+				098E86A8197E4B26008D3896 /* HLYMoreViewController.m */,
+				090717F1197E663800306AAC /* HLYAboutViewController.h */,
+				090717F2197E663800306AAC /* HLYAboutViewController.m */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
 		098096671978BA7B00631808 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +322,7 @@
 				065E05C6197A936300F77D82 /* images */,
 				098A5AE9196F8D6300735950 /* HuangLuyang-Info.plist */,
 				098A5AEA196F8D6300735950 /* InfoPlist.strings */,
+				098E86A2197E387D008D3896 /* Localizable.strings */,
 				098A5AED196F8D6300735950 /* main.m */,
 				098A5AEF196F8D6300735950 /* HuangLuyang-Prefix.pch */,
 				099E32241977E4D100F9B1CB /* popeye.mp4 */,
@@ -327,6 +355,8 @@
 				098A5AF6196F8D6300735950 /* Main_iPad.storyboard */,
 				065E05E1197B6C2600F77D82 /* HLYCycleScrollView.h */,
 				065E05E2197B6C2600F77D82 /* HLYCycleScrollView.m */,
+				090717ED197E5F9E00306AAC /* HLYActivityView.h */,
+				090717EE197E5F9E00306AAC /* HLYActivityView.m */,
 				065E05E0197B67D100F77D82 /* StoryView */,
 			);
 			name = Views;
@@ -349,6 +379,9 @@
 				098096721978BF5600631808 /* HLYVideoPlayerViewController.m */,
 				065E05B5197A68CE00F77D82 /* HLYResumeViewController.h */,
 				065E05B6197A68CE00F77D82 /* HLYResumeViewController.m */,
+				098E86A4197E3897008D3896 /* HLYContactMeViewController.h */,
+				098E86A5197E3897008D3896 /* HLYContactMeViewController.m */,
+				090717F0197E662400306AAC /* More */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -462,6 +495,7 @@
 				098A5AF8196F8D6300735950 /* Main_iPad.storyboard in Resources */,
 				065E05C5197A935E00F77D82 /* profile.jpg in Resources */,
 				099E32251977E4D100F9B1CB /* popeye.mp4 in Resources */,
+				098E86A0197E387D008D3896 /* Localizable.strings in Resources */,
 				098A5B00196F8D6300735950 /* Images.xcassets in Resources */,
 				098A5AF5196F8D6300735950 /* Main_iPhone.storyboard in Resources */,
 				098A5AEC196F8D6300735950 /* InfoPlist.strings in Resources */,
@@ -517,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				065E05CD197A9D5B00F77D82 /* HLYResumeCompany.m in Sources */,
+				098E86A6197E3897008D3896 /* HLYContactMeViewController.m in Sources */,
 				065E05C3197A887200F77D82 /* UITableViewCell+Null.m in Sources */,
 				094E7A7E196FAFBC005CFAB9 /* HLYViewController.m in Sources */,
 				065E05B3197A654700F77D82 /* HLYImageCache.m in Sources */,
@@ -528,6 +563,7 @@
 				094E7ACA196FD8A9005CFAB9 /* HLYStoryView.m in Sources */,
 				065E05C1197A887200F77D82 /* UIDevice-Hardware.m in Sources */,
 				065E05DC197B4E7600F77D82 /* HLYMasterUniversityView.m in Sources */,
+				098E86A9197E4B26008D3896 /* HLYMoreViewController.m in Sources */,
 				09927BFF1973A07C00FA7073 /* UIView+Frame.m in Sources */,
 				098096761978C3F200631808 /* HLYVideo.m in Sources */,
 				099E32281978043400F9B1CB /* NSString+Encrypt.m in Sources */,
@@ -542,11 +578,13 @@
 				099E32211977C57F00F9B1CB /* NSDate+Display.m in Sources */,
 				065E05AE197A652500F77D82 /* UIImageView+Network.m in Sources */,
 				065E05C0197A887200F77D82 /* NSTimer+Addition.m in Sources */,
+				090717EF197E5F9E00306AAC /* HLYActivityView.m in Sources */,
 				094E7ACD196FD92D005CFAB9 /* HLYStoryContentView.m in Sources */,
 				065E05DF197B4E9900F77D82 /* HLYWanmeiView.m in Sources */,
 				094E7A81196FAFCE005CFAB9 /* HLYMainViewController.m in Sources */,
 				065E05D6197B4E3400F77D82 /* HLYSeniorMiddleSchoolView.m in Sources */,
 				065E05B4197A654700F77D82 /* UIImage+Convenience.m in Sources */,
+				090717F3197E663800306AAC /* HLYAboutViewController.m in Sources */,
 				094E7AC3196FCBB0005CFAB9 /* HLYStoryViewController.m in Sources */,
 				065E05C2197A887200F77D82 /* UIImage+ScaleImage.m in Sources */,
 				094E7ABF196FC2F9005CFAB9 /* HLYMainViewLayout.m in Sources */,
@@ -576,6 +614,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				098A5AEB196F8D6300735950 /* en */,
+				098E869D197E385D008D3896 /* Base */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -602,6 +641,15 @@
 				098A5B10196F8D6300735950 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		098E86A2197E387D008D3896 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098E86A1197E387D008D3896 /* Base */,
+				098E86A3197E3884008D3896 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
